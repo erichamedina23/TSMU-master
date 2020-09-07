@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DashboardDS" targetNamespace="http://tempuri.org/DashboardDS.xsd" xmlns:mstns="http://tempuri.org/DashboardDS.xsd" xmlns="http://tempuri.org/DashboardDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="BoMConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BoMConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TSMU.My.MySettings.GlobalReference.Default.BoMConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DashboardDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DashboardDS" msprop:Generator_UserDSName="DashboardDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtKanbanSum" msprop:Generator_TableClassName="DtKanbanSumDataTable" msprop:Generator_TableVarName="tableDtKanbanSum" msprop:Generator_RowChangedName="DtKanbanSumRowChanged" msprop:Generator_TablePropName="DtKanbanSum" msprop:Generator_RowDeletingName="DtKanbanSumRowDeleting" msprop:Generator_RowChangingName="DtKanbanSumRowChanging" msprop:Generator_RowEvHandlerName="DtKanbanSumRowChangeEventHandler" msprop:Generator_RowDeletedName="DtKanbanSumRowDeleted" msprop:Generator_RowClassName="DtKanbanSumRow" msprop:Generator_UserTableName="DtKanbanSum" msprop:Generator_RowEvArgName="DtKanbanSumRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Tanggal" msprop:Generator_ColumnVarNameInTable="columnTanggal" msprop:Generator_ColumnPropNameInRow="Tanggal" msprop:Generator_ColumnPropNameInTable="TanggalColumn" msprop:Generator_UserColumnName="Tanggal" type="xs:string" minOccurs="0" />
+              <xs:element name="Cycle" msprop:Generator_ColumnVarNameInTable="columnCycle" msprop:Generator_ColumnPropNameInRow="Cycle" msprop:Generator_ColumnPropNameInTable="CycleColumn" msprop:Generator_UserColumnName="Cycle" type="xs:string" minOccurs="0" />
+              <xs:element name="Kanban" msprop:Generator_ColumnVarNameInTable="columnKanban" msprop:Generator_ColumnPropNameInRow="Kanban" msprop:Generator_ColumnPropNameInTable="KanbanColumn" msprop:Generator_UserColumnName="Kanban" type="xs:int" minOccurs="0" />
+              <xs:element name="Open" msprop:Generator_ColumnVarNameInTable="columnOpen" msprop:Generator_ColumnPropNameInRow="Open" msprop:Generator_ColumnPropNameInTable="OpenColumn" msprop:Generator_UserColumnName="Open" type="xs:int" minOccurs="0" />
+              <xs:element name="Closed" msprop:Generator_ColumnVarNameInTable="columnClosed" msprop:Generator_ColumnPropNameInRow="Closed" msprop:Generator_ColumnPropNameInTable="ClosedColumn" msprop:Generator_UserColumnName="Closed" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="ShopCode" msprop:Generator_ColumnVarNameInTable="columnShopCode" msprop:Generator_ColumnPropNameInRow="ShopCode" msprop:Generator_ColumnPropNameInTable="ShopCodeColumn" msprop:Generator_UserColumnName="ShopCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtTravel" msprop:Generator_TableClassName="dtTravelDataTable" msprop:Generator_TableVarName="tabledtTravel" msprop:Generator_RowChangedName="dtTravelRowChanged" msprop:Generator_TablePropName="dtTravel" msprop:Generator_RowDeletingName="dtTravelRowDeleting" msprop:Generator_RowChangingName="dtTravelRowChanging" msprop:Generator_RowEvHandlerName="dtTravelRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTravelRowDeleted" msprop:Generator_RowClassName="dtTravelRow" msprop:Generator_UserTableName="dtTravel" msprop:Generator_RowEvArgName="dtTravelRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NoRequest" msprop:Generator_ColumnVarNameInTable="columnNoRequest" msprop:Generator_ColumnPropNameInRow="NoRequest" msprop:Generator_ColumnPropNameInTable="NoRequestColumn" msprop:Generator_UserColumnName="NoRequest" type="xs:string" minOccurs="0" />
+              <xs:element name="NIK" msprop:Generator_ColumnVarNameInTable="columnNIK" msprop:Generator_ColumnPropNameInRow="NIK" msprop:Generator_ColumnPropNameInTable="NIKColumn" msprop:Generator_UserColumnName="NIK" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama" msprop:Generator_ColumnVarNameInTable="columnNama" msprop:Generator_ColumnPropNameInRow="Nama" msprop:Generator_ColumnPropNameInTable="NamaColumn" msprop:Generator_UserColumnName="Nama" type="xs:string" minOccurs="0" />
+              <xs:element name="DeptID" msprop:Generator_ColumnVarNameInTable="columnDeptID" msprop:Generator_ColumnPropNameInRow="DeptID" msprop:Generator_ColumnPropNameInTable="DeptIDColumn" msprop:Generator_UserColumnName="DeptID" type="xs:string" minOccurs="0" />
+              <xs:element name="Negara" msprop:Generator_ColumnVarNameInTable="columnNegara" msprop:Generator_ColumnPropNameInRow="Negara" msprop:Generator_ColumnPropNameInTable="NegaraColumn" msprop:Generator_UserColumnName="Negara" type="xs:string" minOccurs="0" />
+              <xs:element name="NoPaspor" msprop:Generator_ColumnVarNameInTable="columnNoPaspor" msprop:Generator_ColumnPropNameInRow="NoPaspor" msprop:Generator_ColumnPropNameInTable="NoPasporColumn" msprop:Generator_UserColumnName="NoPaspor" type="xs:string" minOccurs="0" />
+              <xs:element name="NoVisa" msprop:Generator_ColumnVarNameInTable="columnNoVisa" msprop:Generator_ColumnPropNameInRow="NoVisa" msprop:Generator_ColumnPropNameInTable="NoVisaColumn" msprop:Generator_UserColumnName="NoVisa" type="xs:string" minOccurs="0" />
+              <xs:element name="DepartureDate" msprop:Generator_ColumnVarNameInTable="columnDepartureDate" msprop:Generator_ColumnPropNameInRow="DepartureDate" msprop:Generator_ColumnPropNameInTable="DepartureDateColumn" msprop:Generator_UserColumnName="DepartureDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ArrivalDate" msprop:Generator_ColumnVarNameInTable="columnArrivalDate" msprop:Generator_ColumnPropNameInRow="ArrivalDate" msprop:Generator_ColumnPropNameInTable="ArrivalDateColumn" msprop:Generator_UserColumnName="ArrivalDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtTravelSum" msprop:Generator_TableClassName="dtTravelSumDataTable" msprop:Generator_TableVarName="tabledtTravelSum" msprop:Generator_TablePropName="dtTravelSum" msprop:Generator_RowDeletingName="dtTravelSumRowDeleting" msprop:Generator_RowChangingName="dtTravelSumRowChanging" msprop:Generator_RowEvHandlerName="dtTravelSumRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTravelSumRowDeleted" msprop:Generator_UserTableName="dtTravelSum" msprop:Generator_RowChangedName="dtTravelSumRowChanged" msprop:Generator_RowEvArgName="dtTravelSumRowChangeEvent" msprop:Generator_RowClassName="dtTravelSumRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Passport" msprop:Generator_ColumnVarNameInTable="columnPassport" msprop:Generator_ColumnPropNameInRow="Passport" msprop:Generator_ColumnPropNameInTable="PassportColumn" msprop:Generator_UserColumnName="Passport" type="xs:int" minOccurs="0" />
+              <xs:element name="Visa" msprop:Generator_ColumnVarNameInTable="columnVisa" msprop:Generator_ColumnPropNameInRow="Visa" msprop:Generator_ColumnPropNameInTable="VisaColumn" msprop:Generator_UserColumnName="Visa" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
